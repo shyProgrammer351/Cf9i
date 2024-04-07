@@ -1,0 +1,58 @@
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/C/C0902.js"></script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> C 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Cf1i/Cf1i1.html'>출력</a></li><li><a href='../Cf2i/Cf2i1.html'>입력</a></li><li><a href='../Cf3i/Cf3i1.html'>변수/연산자</a></li><li><a href='../Cf4i/Cf4i1.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Cf5i/Cf5i1.html'>선택문(if)</a></li><li><a href='../Cf6i/Cf6i1.html'>반복문(while)</a></li><li><a href='../Cf7i/Cf7i1.html'>반복문(for)</a></li><li><a href='../Cf8i/Cf8i1.html'>배열</a></li><li><a href='../Cf9i/Cf9i1.html'>문자열</a></li><ul><li><a href='../Cf9i/Cf9i1.html'>이름 성 비교</a></li><li><a href='../Cf9i/Cf9i2.html'>기상특보별 주의사항</a></li><ul><li><a href='Cf9i2.html'>코드읽기</a></li><li><a href='Cf9i2a.html'>알고리즘</a></li><li><a href='Cf9i2k.html'>키워드</a></li><li><a href='Cf9i2b.html'>빈칸채우기</a></li><li><a href='Cf9i2s.html'>실행순서</a></li><li><a href='Cf9i2m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/C/blob/main/Chapter09/Weather.c' target='_blank'>소스코드</a></li></ul><li><a href='../Cf9i/Cf9i3.html'>가위바위보</a></li><li><a href='../Cf9i/Cf9i4.html'>단어 정렬</a></li><li><a href='../Cf9i/Cf9i5.html'>챗봇 대화</a></li></ul><li><a href='../Cg0i/Cg0i1.html'>함수</a></li><li><a href='../Cg1i/Cg1i1.html'>포인터</a></li><li><a href='../Cg2i/Cg2i1.html'>파일입출력</a></li><li><a href='../Cg3i/Cg3i1.html'>구조체/열거형/동적할당</a></li><li><a href='../Cg4i/Cg4i1.html'>함수자료전달</a></li><li><a href='../Cg5i/Cg5i1.html'>전처리기/파일분할</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>기상 특보를 입력하면, 이를 바탕으로 주의사항을 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 참고로, 대설특보는 눈길 운전 조심을 출력하고, 호우특보는 빗길 운전 조심을 출력하고, 강풍주의보는 안전 운전 조심을 출력하세요.</pre> 				<pre class='selectable'>오늘의 기상 특보를 입력하세요 : <b><font color='red'>대설특보</font></b>
+일부 지방에 대설특보가 발효중입니다. 출근길 눈길 운전에 유의해야 합니다.
+</pre><br><pre class='selectable'>오늘의 기상 특보를 입력하세요 : <b><font color='red'>호우특보</font></b>
+일부 지방에 호우특보가 발효중입니다. 출근길 빗길 운전에 유의해야 합니다.
+</pre><br><pre class='selectable'>오늘의 기상 특보를 입력하세요 : <b><font color='red'>강풍주의보</font></b>
+일부 지방에 강풍주의보가 발효중입니다. 출근길 안전 운전에 유의해야 합니다.
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;기상 특보를 입력받기 <br>&nbsp; &nbsp;날씨 뉴스 기사 생성 <br>&nbsp; &nbsp;&nbsp; &nbsp;대설특보는 눈길 운전 조심을 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;호우특보는 빗길 운전 조심을 출력 <br>&nbsp; &nbsp;&nbsp; &nbsp;강풍주의보는 안전 운전 조심을 출력 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter09/Weather.c</font> 
+</pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;  
+</pre><pre id="code0" class="unselectable codeClass">	#include &lt;<font color='red' title="문자열 관련 함수 정보를 가지고 있는 헤더파일">string.h</font>> 								 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작 </b></font>
+</pre>
+<pre id="code1" class="unselectable codeClass">1	int main() { 
+</pre><pre id="code0" class="unselectable codeClass">		char weatherReport<font color='red' title="여는 대괄호로 배열의 크기를 선언하거나 특정 배열 원소를 가리킬 때 사용">[</font>32<font color='red' title="닫는 대괄호로 배열의 크기를 선언하거나 특정 배열 원소를 가리킬 때 사용">]</font> = <font color='red' title="문자배열에서 빈문자열을 표현">""</font>;					 
+</pre>
+<pre id="code2" class="unselectable codeClass">2		char newsMessage<font color='red' title="여는 대괄호로 배열의 크기를 선언하거나 특정 배열 원소를 가리킬 때 사용">[</font>1024<font color='red' title="닫는 대괄호로 배열의 크기를 선언하거나 특정 배열 원소를 가리킬 때 사용">]</font> = <font color='red' title="문자배열에서 빈문자열을 표현">""</font>; 
+</pre><pre id="code0" class="unselectable codeClass">							 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 기상 특보를 입력받기 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		printf("오늘의 기상 특보를 입력하세요 : " ); 
+</pre>
+<pre id="code3" class="unselectable codeClass">3		scanf( "<font color='red' title="문자열 형식으로 입출력">%s</font>", weatherReport );					 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 날씨 뉴스 기사 생성 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		printf( "일부 지방에 <font color='red' title="문자열 형식으로 입출력">%s</font>가 발효중입니다. \n", weatherReport );  
+</pre>
+<pre id="code4" class="unselectable codeClass">4		<font color='red' title="문자열을 복사하는 함수">strcpy</font>( newsMessage, "출근길 " );					 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 대설특보는 눈길 운전 조심을 출력 </b></font>
+</pre>
+<pre id="code5" class="unselectable codeClass">5		if ( <font color='red' title="참은 거짓으로 거짓은 참으로 반환하는 NOT 연산자">!</font><font color='red' title="두 문자열을 비교하여 같으면 0를 반환하는 함수">strcmp</font>( weatherReport, "대설특보" ) ) { 
+</pre>
+<pre id="code6" class="unselectable codeClass">6			<font color='red' title="문자열을 덧붙이는 함수">strcat</font>( newsMessage, "눈길 " );					 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 호우특보는 빗길 운전 조심을 출력  </b></font>
+</pre>
+<pre id="code7" class="unselectable codeClass">7		else if ( <font color='red' title="참은 거짓으로 거짓은 참으로 반환하는 NOT 연산자">!</font><font color='red' title="두 문자열을 비교하여 같으면 0를 반환하는 함수">strcmp</font>( weatherReport, "호우특보" ) ) { 
+</pre>
+<pre id="code8" class="unselectable codeClass">8			<font color='red' title="문자열을 덧붙이는 함수">strcat</font>( newsMessage, "빗길 " );					 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 강풍주의보는 안전 운전 조심을 출력  </b></font>
+</pre>
+<pre id="code9" class="unselectable codeClass">9		else if ( <font color='red' title="참은 거짓으로 거짓은 참으로 반환하는 NOT 연산자">!</font><font color='red' title="두 문자열을 비교하여 같으면 0를 반환하는 함수">strcmp</font>( weatherReport, "강풍주의보" ) ) {	 
+</pre>
+<pre id="code10" class="unselectable codeClass">10			<font color='red' title="문자열을 덧붙이는 함수">strcat</font>( newsMessage, "안전 " );					 
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">		 
+</pre>
+<pre id="code11" class="unselectable codeClass">11		<font color='red' title="문자열을 덧붙이는 함수">strcat</font>( newsMessage, "운전에 유의해야 합니다." );			 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 날씨 뉴스 기사 출력</font>  
+</pre>
+<pre id="code12" class="unselectable codeClass">12		printf( "<font color='red' title="문자열 형식으로 입출력">%s</font>", newsMessage ); 
+</pre><pre id="code0" class="unselectable codeClass">	 
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
+</pre>
+<pre id="code13" class="unselectable codeClass">13		return 0; 
+</pre><pre id="code0" class="unselectable codeClass">	} 
+</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전)및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:65px;width:340px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
